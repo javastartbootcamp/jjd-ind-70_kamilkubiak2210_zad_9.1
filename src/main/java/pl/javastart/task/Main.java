@@ -12,8 +12,8 @@ public class Main {
 
         Firma janNowakServices = new Firma("Jan Nowak IT Services", new RyczaltEwidencjonowany());
 
-        janNowakServices.dodajPrzychod("Programowanie", 15_000);
-        janNowakServices.dodajWydatek("Energetyki", 200);
+        janNowakServices.dodajPrzychod("Programowanie", 150_000);
+        janNowakServices.dodajWydatek("Energetyki", 20000);
 
         janNowakServices.wyswietlPodsumowanie();
     }
