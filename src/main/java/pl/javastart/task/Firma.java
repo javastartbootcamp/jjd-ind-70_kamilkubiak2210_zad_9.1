@@ -15,13 +15,12 @@ public class Firma {
     public void wyswietlPodsumowanie() {
         double sumaPrzychodow = zsumujPrzychody();
         double sumaWydatkow = zsumujWydatki();
-        double dochod = sumaPrzychodow - sumaWydatkow;
 
         System.out.printf("======= Firma: %s ===========\n", nazwa);
-        System.out.printf("Forma opodatkowania: %s\n", formaOpodatkowania.drukFormaOpodatkowania(dochod));
+        System.out.printf("Forma opodatkowania: %s\n", formaOpodatkowania.drukFormaOpodatkowania());
         System.out.printf("Suma przychodów: %.2f zł\n", sumaPrzychodow);
-        System.out.printf("Suma wydatków: %.2f zł\n", zsumujWydatki());
-        System.out.printf("Podatek do zapłacenia: %.2f zł", formaOpodatkowania.wyliczPodatek(sumaPrzychodow, zsumujWydatki()));
+        System.out.printf("Suma wydatków: %.2f zł\n", sumaWydatkow);
+        System.out.printf("Podatek do zapłacenia: %.2f zł", formaOpodatkowania.wyliczPodatek(sumaPrzychodow, sumaWydatkow));
         System.out.print("\n\n");
     }
 
